@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StockArithm Adapter Manifest",
+  "type": "object",
+  "required": [
+    "name",
+    "function",
+    "columns",
+    "requires_key"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requires_key": {
+      "type": "boolean"
+    },
+    "source_url": {
+      "type": "string"
+    }
+  }
+}
